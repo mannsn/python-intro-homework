@@ -1,0 +1,1 @@
+print ("I setup my environment, wrote a simple python script and ran it.   I then staged and pushed my changes to git")
