@@ -1,4 +1,11 @@
-age = int(input("Enter your age? "))
+while True:
+    age = int(input("Enter your age? "))
+    if age >= 0:
+        break
+    print("Please enter an age that is zero or positive.")
+
+print("You entered:", age)
+
 
 if age >= 0 and age <= 12:
 	category ="Child"
