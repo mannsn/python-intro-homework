@@ -25,7 +25,7 @@ elif ((lower_day == "tuesday" or lower_day == "tue") and (lower_time_of_day == "
 elif ((lower_day == "tuesday" or lower_day == "tue") and (lower_time_of_day == "evening")):
     print(f"On {day} {time_of_day} play Splendor duel!")
 
-elif ((lower_day == "wedensday" or lower_day == "wed") and (lower_time_of_day == "morning")):
+elif ((lower_day == "wednesday" or lower_day == "wed") and (lower_time_of_day == "morning")):
     print(f"On {day} {time_of_day} go kayaking!")
 elif ((lower_day == "wednesday" or lower_day == "wed") and (lower_time_of_day == "afternoon")):
     print(f"On {day} {time_of_day} sew a project!")
