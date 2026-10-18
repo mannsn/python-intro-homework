@@ -32,8 +32,8 @@ elif ((lower_day == "wednesday" or lower_day == "wed") and (lower_time_of_day ==
 elif ((lower_day == "wednesday" or lower_day == "wed") and (lower_time_of_day == "evening")):
     print(f"On {day} {time_of_day} take dog on a walk!")
 
-elif ((lower_day != "monday" or lower_day != "mon") and (lower_day != "tuesday" or lower_day != "tue" ) and (lower_day != "wednesday" or lower_day != "wed" )):
-     print (f"Sorry, I don't recognize time the day {day}. Try Monday/Mon Tuesday/Tue Wednesday/Wed ") 
+elif (lower_day != "monday" and  lower_day != "mon" and lower_day != "tuesday" and lower_day != "tue" and lower_day != "wednesday" and lower_day != "wed" ):
+     print (f"Sorry, I don't recognize the day {day}. Try Monday/Mon Tuesday/Tue Wednesday/Wed ") 
 
 elif (lower_time_of_day != "morning" or lower_time_of_day != "afternoon" or lower_time_of_day != "evening"):
      print (f"Sorry, I don't recognize time of day {time_of_day}. Try morning or afternoon or evening")
