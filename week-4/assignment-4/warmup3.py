@@ -14,3 +14,6 @@ print(f"all languages = {all_languages}")
 
 common_languages = program_list1.intersection(program_list2)
 print(f"intersection languages = {common_languages}")
+
+difference_languages = program_list1.difference(program_list2)
+print(f"difference languages = {difference_languages}")
