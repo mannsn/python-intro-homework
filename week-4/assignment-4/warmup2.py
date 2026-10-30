@@ -5,14 +5,15 @@ Add a new key "graduated" with the value False
 Print the updated dictionary
 """
 
-students = {
-    "George": {"grade": 6, "subjects": ["reading", "algebra", "art"]},
-    "Samantha": {"grade": 1, "subjects": ["reading", "pe", "music"]},
-    "Sabrina": {"grade": 12, "subjects": ["literature", "calculus", "physics"]},
-}
+student1 = {"name": "George","grade": 6, "subjects": ["reading", "algebra", "art"]}
+print (student1)
+  
 
-for name, info in students.items():
-    print(f"before update {info}")
-    info.update({"graduated": False})
-    print(f"after update {info}")
+for name, info in student1.items():
+    print(f"key: {name} value: {info}")
+
+student1.update({"graduated": False})
+
+print(f"after update {student1}")
+
 
