@@ -9,7 +9,7 @@ while True:
 
     if number.isdigit():
       number = int(number)
-      if number >= 0:
+      if number > 0:
           break
       print("That's not a positive integer. Try again.")
     else:
