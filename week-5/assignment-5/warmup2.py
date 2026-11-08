@@ -5,9 +5,14 @@ Use a while loop that repeatedly asks the user to enter a positive integer. If t
 
 
 while True:
-    number = int(input("Enter a positive integer? "))
-    if number >= 0:
-        break
-    print("That's not a positive integer. Try again.")
+    number = (input("Enter a positive integer? "))
+
+    if number.isdigit():
+      number = int(number)
+      if number >= 0:
+          break
+      print("That's not a positive integer. Try again.")
+    else:
+       print("That's not a positive integer. Try again.")
 
 print(f"Got it: {number} ")
