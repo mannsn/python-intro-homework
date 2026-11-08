@@ -1,0 +1,1 @@
+#Ask the user for a number. Using two separate if/elif/else blocks — one for sign, one for parity — print two lines of output. The examples below show the format for two different inputs — your number will differ
