@@ -118,4 +118,4 @@ while True:
             print("Menu option not in range 1-5, Try again")
 
     else:
-        print("Menu option not in range 1-5, Try again")
+        print("Entered non digit. Menu option not in range 1-5, Try again")

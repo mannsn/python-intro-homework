@@ -10,6 +10,7 @@ Do not use Python's .index() method or the in operator — implement the search 
 
 
 names = ["Sunny", "Nicky", "Destiny", "Charlie"]
+print(f"List of names: {names}")
 name_to_find = input("Enter a name to search for: ")
 
 found = False
@@ -17,6 +18,7 @@ for i in range(len(names)):
     if names[i] == name_to_find:
         found = True
         print(f"Found {name_to_find} at index {i}")
+        break
 
 
 if not found:
