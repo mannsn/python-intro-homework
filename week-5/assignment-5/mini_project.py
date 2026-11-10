@@ -76,15 +76,40 @@ while True:
                     index = 0
                     found = False
                     for number in numbers:
-                        index += 1
+
                         if number == search_number:
                             print(f"Index of search number {search_number} = {index}")
                             found = True
                             break
+                        index = index + 1
+
                     if not found:
                         print(f"Search number {search_number} not found")
                 else:
                     print(f"Search number must be a digit, try again.")
+
+            # Sort
+            elif menu_number == 4:
+                print(f"\nList of numbers = {numbers}")
+                swapped = True
+
+                while swapped:
+
+                    swapped = False
+
+                    for index in range(len(numbers) - 1):
+
+                        print(f"Index = {index}")
+                        firstNum = numbers[index]
+                        secondNum = numbers[index + 1]
+                        print(f"firstNum = {firstNum}")
+                        print(f"secondNum = {secondNum}")
+                        if firstNum > secondNum:
+                            numbers[index] = secondNum
+                            numbers[index + 1] = firstNum
+                            swapped = True
+
+                print(f"\n Sorted list of numbers = {numbers}")
 
             elif menu_number == 5:
                 print("Good bye - you selected quit")
