@@ -46,12 +46,12 @@ while True:
     if menu_number.isdigit():
         menu_number = int(menu_number)
 
-        if (menu_number > 0 and menu_number) < 6:
+        if (menu_number > 0 and menu_number <= 5):
 
             # Find minimum
             if menu_number == 1:
                 print(f"\nList of numbers = {numbers}")
-                min_number = 100
+                min_number = numbers[0]
                 for number in numbers:
                     if number < min_number:
                         min_number = number
@@ -60,7 +60,7 @@ while True:
             # Find maximum
             elif menu_number == 2:
                 print(f"\nList of numbers = {numbers}")
-                max_number = 0
+                max_number = numbers[0]
                 for number in numbers:
                     if number > max_number:
                         max_number = number
@@ -99,11 +99,10 @@ while True:
 
                     for index in range(len(numbers) - 1):
 
-                        print(f"Index = {index}")
+                        
                         firstNum = numbers[index]
                         secondNum = numbers[index + 1]
-                        print(f"firstNum = {firstNum}")
-                        print(f"secondNum = {secondNum}")
+                  
                         if firstNum > secondNum:
                             numbers[index] = secondNum
                             numbers[index + 1] = firstNum
