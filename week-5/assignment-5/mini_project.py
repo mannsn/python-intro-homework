@@ -104,8 +104,7 @@ while True:
                         secondNum = numbers[index + 1]
                   
                         if firstNum > secondNum:
-                            numbers[index] = secondNum
-                            numbers[index + 1] = firstNum
+                            numbers[index], numbers[index+1] = numbers[index+1], numbers[index]
                             swapped = True
 
                 print(f"\n Sorted list of numbers = {numbers}")
