@@ -107,7 +107,7 @@ while True:
                             numbers[index], numbers[index+1] = numbers[index+1], numbers[index]
                             swapped = True
 
-                print(f"\n Sorted list of numbers = {numbers}")
+                print(f"\nSorted list of numbers = {numbers}")
 
             elif menu_number == 5:
                 print("Good bye - you selected quit")
