@@ -15,5 +15,5 @@ def greet(name, greeting="Hello"):
 
 if __name__ == "__main__":
     greet ("Sunny")
-    greet ("Good morning", "Rory")
+    greet ("Rory","Its a good day")
     greet("Sunny", greeting="Good morning")
